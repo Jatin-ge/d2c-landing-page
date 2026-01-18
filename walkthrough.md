@@ -94,21 +94,42 @@ Refined the pricing section to ensure maximum visibility and conversion optimiza
 
 This project is optimized for deployment on [Vercel](https://vercel.com), the creators of Next.js and a top choice for Vite/React apps.
 
-### Option 1: Deploy via GitHub (Recommended)
-1.  **Push to GitHub**:
-    -   Create a new repository on GitHub.
-    -   Run the following commands in your terminal (I have already initialized git for you):
-        ```bash
-        git remote add origin <your-github-repo-url>
-        git branch -M main
-        git push -u origin main
-        ```
-2.  **Import to Vercel**:
-    -   Go to [Vercel Dashboard](https://vercel.com/dashboard).
-    -   Click **"Add New..."** -> **"Project"**.
-    -   Select your GitHub repository.
-    -   Vercel will detect `Vite` automatically.
-    -   Click **"Deploy"**.
+### Deployment (Ready!)
+Your code is now live on GitHub: [d2c-landing-page](https://github.com/Jatin-ge/d2c-landing-page)
+
+### Deployment (Fail-Safe Guide)
+You have successfully pushed your code to GitHub. Here is the **exact, step-by-step** guide to make it live on the internet using Vercel.
+
+**1. Log In**
+- Go to [vercel.com](https://vercel.com) and Log In.
+
+**2. Start New Project**
+- Look for a button that says **"Add New..."** (usually a white button on the right).
+- Select **"Project"** from the dropdown.
+
+**3. Import Repository**
+- On the next screen, you will see a list of your GitHub repositories.
+- Find **`d2c-landing-page`**.
+- Click the **"Import"** button next to it.
+
+**4. Configure (Don't Change Anything)**
+- You will see a screen titled "Configure Project".
+- **Framework Preset**: It should automatically say **`Vite`**. If it does, **DO NOT CHANGE IT**.
+- **Root Directory**: Leave it as `./`.
+- **Environment Variables**: You don't need any.
+
+**5. Deploy**
+- Click the big black/white **"Deploy"** button at the bottom.
+
+**6. Wait**
+- You will see a terminal window processing.
+- Wait about **30-60 seconds**.
+- Once it finishes, you will see a "Congratulations!" screen with confetti.
+
+**7. Get Your Link**
+- Click the big screenshot of your website.
+- It will open your live site (e.g., `d2c-landing-page.vercel.app`).
+- **Copy this URL**—that is your live website link!
 
 ### Option 2: Deploy via CLI
 If you have the Vercel CLI installed:
