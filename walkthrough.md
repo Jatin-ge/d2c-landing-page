@@ -9,19 +9,12 @@ I have successfully scaffolded the D2C Landing Page application. Since Node.js w
 - **Tailwind CSS**: Configured with the specific "Dark Mode" aesthetic (Brand Dark: `#030712`, Brand Orange: `#f97316`).
 - **Routing**: `react-router-dom` set up for navigation between the Landing Page and Order Page.
 
-### 2. Components
-- **[LandingPage.jsx](file:///Users/jatinagrawal/Ecom Landing Page/src/pages/LandingPage.jsx)**: The main page featuring:
-    - **Hero Section**: Headline, pricing badge, and "Get Instant Access" CTA.
-    - **Social Proof**: "Used by Top 500+ D2C Founders" and brand placeholders.
-    - **Problem & Solution**: Copy adapted from the reference site.
-    - **Comparison Table**: "Ours vs. Courses vs. Agencies".
-- **[StickyFooter.jsx](file:///Users/jatinagrawal/Ecom Landing Page/src/components/StickyFooter.jsx)**: 
-    - Appears when you scroll down.
-    - Contains a **15-minute countdown timer**.
-    - "Get Instant Access" button.
-- **[OrderPage.jsx](file:///Users/jatinagrawal/Ecom Landing Page/src/pages/OrderPage.jsx)**:
-    - Clean, secure-looking checkout page placeholder.
-    - Simulates loading state before showing the form.
+### 1. Single Page Funnel (Free Offer)
+- **Merged Content**: All high-conversion elements from the 2-page funnel are now on the main Landing Page.
+- **FREE Offer**: The product is now positioned as a free lead magnet (switched from ₹49).
+- **Embedded Form**: The GHL checkout/lead capture form is embedded at the bottom of the main page.
+- **Smooth Navigation**: All CTA buttons and the Sticky Footer now smoothly scroll users directly to the form.
+- **Auto-sliding Proof**: Integrated the dynamic testimonial slider into the main page.
 
 ---
 

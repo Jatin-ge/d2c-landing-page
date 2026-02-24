@@ -389,6 +389,21 @@ const LandingPage = () => {
                 </main>
             </section>
 
+            {/* Cashfree Form Section */}
+            <section className="py-16 px-4 border-t border-gray-800 bg-[#030712]">
+                <div className="max-w-4xl mx-auto text-center mb-10">
+                    <h2 className="text-2xl md:text-4xl font-bold mb-4">Alternative Payment Option</h2>
+                    <p className="text-gray-400">If you prefer using Cashfree, you can complete your details below.</p>
+                </div>
+                <div className="max-w-5xl mx-auto bg-white rounded-3xl overflow-hidden shadow-2xl min-h-[600px]">
+                    <iframe
+                        src="https://payments.cashfree.com/forms/ecom-funnel-ge"
+                        style={{ width: '100%', height: '800px', border: 'none' }}
+                        title="Cashfree Payment Form"
+                    ></iframe>
+                </div>
+            </section>
+
             {/* FAQ Section */}
             <div className="max-w-3xl mx-auto px-4 mb-24">
                 <h2 className="text-3xl font-bold text-center mb-2">Frequently Asked Questions</h2>
