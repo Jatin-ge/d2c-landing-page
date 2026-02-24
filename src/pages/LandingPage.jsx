@@ -22,14 +22,8 @@ const LandingPage = () => {
         };
         window.addEventListener('scroll', handleScroll);
 
-        const script = document.createElement('script');
-        script.src = "https://www.agency.growthescalators.com/js/form_embed.js";
-        script.async = true;
-        document.body.appendChild(script);
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
-            document.body.removeChild(script);
         };
     }, []);
 
@@ -51,9 +45,9 @@ const LandingPage = () => {
     };
 
     const faqs = [
-        { q: "Is this really free?", a: "Yes, we are offering this breakdown for free to help D2C founders avoid the common mistakes that cost lakhs in ad spend." },
+        { q: "Is this really just ₹9?", a: "Yes, we are offering this breakdown for an introductory price of ₹9 to help D2C founders avoid the common mistakes that cost lakhs in ad spend." },
         { q: "Is this suitable for beginners?", a: "Absolutely. The breakdowns are structured to be understood by anyone, whether you're just starting out or have years of experience." },
-        { q: "What format is the product in?", a: "It is a high-quality PDF breakdown that you can instantly download after filling the form." },
+        { q: "What format is the product in?", a: "It is a high-quality PDF breakdown that you can instantly download after completing the checkout." },
         { q: "Is there any catch?", a: "No catch. We want to show you the value we provide. If you like it, you might check out our other services later." },
         { q: "How long do I have access?", a: "You get lifetime access to the version you download today." }
     ];
@@ -68,7 +62,7 @@ const LandingPage = () => {
                 <div className="max-w-4xl mx-auto text-center">
                     <div className="inline-flex items-center gap-2 bg-yellow-500/10 text-yellow-400 px-3 py-1 md:px-4 md:py-1.5 rounded-full text-xs md:text-sm font-semibold mb-6 md:mb-8 border border-yellow-500/20">
                         <Zap className="w-3 h-3 md:w-4 md:h-4 fill-current" />
-                        Free Access for Top 2000+ D2C Founders
+                        Limited Offer for Top 2000+ D2C Founders
                     </div>
 
                     <h1 className="text-3xl md:text-6xl font-bold tracking-tight mb-4 md:mb-6 leading-tight">
@@ -87,12 +81,12 @@ const LandingPage = () => {
                             onClick={scrollToForm}
                             className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white font-bold py-3 md:py-4 px-8 md:px-10 rounded-2xl shadow-[0_0_20px_rgba(249,115,22,0.5)] transition-all duration-300 transform hover:scale-105 active:scale-95 text-lg md:text-xl"
                         >
-                            Get Free Access Now
+                            Get Instant Access @ ₹9
                         </button>
                         <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4 text-xs md:text-sm text-gray-400">
                             <span className="flex items-center gap-1"><Zap className="w-3 h-3 text-yellow-400" /> Instant PDF delivery</span>
                             <span className="hidden md:inline w-1 h-1 bg-gray-600 rounded-full"></span>
-                            <span className="flex items-center gap-1"><ShieldCheck className="w-3 h-3 text-green-400" /> No Payment Required</span>
+                            <span className="flex items-center gap-1"><ShieldCheck className="w-3 h-3 text-green-400" /> Secure Checkout</span>
                         </div>
                     </div>
                 </div>
@@ -227,7 +221,7 @@ const LandingPage = () => {
 
                     <div className="bg-[#1e293b]/50 rounded-2xl p-8 text-center border border-gray-700">
                         <p className="text-gray-400 mb-2">Access Price:</p>
-                        <div className="text-5xl font-bold text-orange-500 mb-2 uppercase tracking-tight">FREE</div>
+                        <div className="text-5xl font-bold text-orange-500 mb-2 uppercase tracking-tight">₹9</div>
                         <p className="text-sm text-gray-500">(Limited Time Offer)</p>
                     </div>
                 </div>
@@ -314,7 +308,7 @@ const LandingPage = () => {
                         </thead>
                         <tbody className="divide-y divide-gray-800 text-sm md:text-base">
                             {[
-                                { feature: "Cost", ours: "FREE", other1: "₹5,000+", other2: "₹50,000+" },
+                                { feature: "Cost", ours: "₹9", other1: "₹5,000+", other2: "₹50,000+" },
                                 { feature: "Time to Value", ours: "Instant", other1: "Hours of Video", other2: "Weeks" },
                                 { feature: "Actionability", ours: "Copy & Paste", other1: "Theory", other2: "Done-for-you" },
                                 { feature: "Risk", ours: "Zero", other1: "High", other2: "Very High" },
@@ -331,45 +325,30 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            {/* Order Form Section */}
+            {/* Checkout Section (Cashfree Only) */}
             <section className="py-16 px-4 bg-gradient-to-b from-[#030712] to-[#0f172a]" ref={formRef}>
                 <header className="text-center max-w-4xl mx-auto mb-10">
                     <div className="inline-block bg-orange-500/20 text-orange-500 px-4 py-1 rounded-full text-sm font-bold mb-4 border border-orange-500/20">
-                        LIMITED TIME: ₹0
+                        LIMITED TIME: ₹9
                     </div>
                     <h2 className="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">
                         Get Instant Access <br />
                         <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
-                            While It's Free
+                            While Offer Lasts
                         </span>
                     </h2>
                     <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-                        Fill in your details below to receive the complete breakdown pack directly in your inbox.
+                        Complete your payment of ₹9 below to receive the complete breakdown pack directly in your inbox.
                     </p>
                 </header>
 
-                <main className="max-w-4xl mx-auto">
-                    <div className="bg-gray-900/70 backdrop-blur-xl border border-white/10 rounded-3xl p-4 md:p-8 shadow-2xl relative overflow-hidden">
-                        <div className="absolute top-0 right-0 p-40 bg-orange-500/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
-                        <div id="order-form-container" className="min-h-[600px] relative z-10">
-                            <iframe
-                                src="https://www.agency.growthescalators.com/widget/form/QOaO1bJoTSjGbX93bbJ5"
-                                style={{ width: '100%', height: '100%', border: 'none', borderRadius: '12px' }}
-                                id="inline-QOaO1bJoTSjGbX93bbJ5"
-                                data-layout="{'id':'INLINE'}"
-                                data-trigger-type="alwaysShow"
-                                data-trigger-value=""
-                                data-activation-type="alwaysActivated"
-                                data-activation-value=""
-                                data-deactivation-type="neverDeactivate"
-                                data-deactivation-value=""
-                                data-form-name="Ecom Funnel "
-                                data-height="1889"
-                                data-layout-iframe-id="inline-QOaO1bJoTSjGbX93bbJ5"
-                                data-form-id="QOaO1bJoTSjGbX93bbJ5"
-                                title="Ecom Funnel "
-                            ></iframe>
-                        </div>
+                <main className="max-w-5xl mx-auto">
+                    <div className="bg-white rounded-3xl overflow-hidden shadow-2xl relative min-h-[600px]">
+                        <iframe
+                            src="https://payments.cashfree.com/forms/ecom-funnel-ge"
+                            style={{ width: '100%', height: '800px', border: 'none' }}
+                            title="Cashfree Payment Form"
+                        ></iframe>
                     </div>
 
                     <div className="mt-8 grid grid-cols-3 gap-4 text-center border-t border-gray-800 pt-8 text-gray-400">
@@ -387,21 +366,6 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </main>
-            </section>
-
-            {/* Cashfree Form Section */}
-            <section className="py-16 px-4 border-t border-gray-800 bg-[#030712]">
-                <div className="max-w-4xl mx-auto text-center mb-10">
-                    <h2 className="text-2xl md:text-4xl font-bold mb-4">Alternative Payment Option</h2>
-                    <p className="text-gray-400">If you prefer using Cashfree, you can complete your details below.</p>
-                </div>
-                <div className="max-w-5xl mx-auto bg-white rounded-3xl overflow-hidden shadow-2xl min-h-[600px]">
-                    <iframe
-                        src="https://payments.cashfree.com/forms/ecom-funnel-ge"
-                        style={{ width: '100%', height: '800px', border: 'none' }}
-                        title="Cashfree Payment Form"
-                    ></iframe>
-                </div>
             </section>
 
             {/* FAQ Section */}
@@ -435,10 +399,10 @@ const LandingPage = () => {
                     onClick={scrollToForm}
                     className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white font-bold py-4 px-10 rounded-2xl shadow-lg transition-all transform hover:scale-105 text-xl w-full md:w-auto"
                 >
-                    Get Your Free Pack Now
+                    Get Your Pack Now for ₹9
                 </button>
                 <p className="mt-4 text-xs md:text-sm text-gray-500 flex items-center justify-center gap-2">
-                    <Lock className="w-3 h-3" /> No Credit Card Required
+                    <Lock className="w-3 h-3" /> 100% Secure Checkout
                 </p>
             </div>
 

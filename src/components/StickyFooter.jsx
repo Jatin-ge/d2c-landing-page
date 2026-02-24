@@ -28,7 +28,7 @@ const StickyFooter = ({ scrollToForm }) => {
 
                 <div className="flex-1 md:text-center hidden md:block">
                     <p className="text-gray-300 text-sm">
-                        Offer expires soon! <span className="text-white font-bold text-orange-400 underline italic">CLAIM FOR FREE</span> before access closes.
+                        Offer expires soon! <span className="text-white font-bold text-orange-400 underline italic">CLAIM FOR ₹9</span> before access closes.
                     </p>
                 </div>
 
@@ -36,7 +36,7 @@ const StickyFooter = ({ scrollToForm }) => {
                     onClick={scrollToForm}
                     className="bg-orange-600 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-orange-900/20 flex items-center gap-2 text-sm md:text-base transition-all transform hover:scale-105"
                 >
-                    Claim My Free Pack
+                    Claim for ₹9 Only
                     <ArrowRight className="w-4 h-4" />
                 </button>
             </div>
