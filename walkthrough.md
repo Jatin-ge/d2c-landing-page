@@ -136,3 +136,27 @@ If you have the Vercel CLI installed:
 1.  Run `vercel` in your terminal.
 2.  Follow the prompts (mostly hitting `Enter`).
 3.  It will provide a live URL instantly.
+
+### Updates & Maintenance
+Whenever you make changes (like adding the Google Tag Manager scripts we just did), you need to push them to GitHub to see them live on Vercel.
+
+**How to Update Your Live Site:**
+1.  Open your terminal.
+2.  Run this command to push your latest changes:
+    ```bash
+    cd "Ecom Landing Page"
+    git add .
+    git commit -m "Updated site with new changes"
+    git push
+    ```
+3.  **That's it!** Vercel will automatically detect the new code and update your site within a minute.
+
+### Bonus: Making Your Repository Public
+If you created a Private repository and want to make it Public (so others can see your code):
+
+1.  Go to your Repository on GitHub.
+2.  Click **Settings** (top tabs, usually the last one).
+3.  Scroll all the way down to the **"Danger Zone"**.
+4.  Look for **"Change repository visibility"**.
+5.  Click **"Change visibility"** -> Select **"Make public"**.
+6.  Confirm by typing the repository name.
